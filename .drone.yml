@@ -15,14 +15,6 @@ build:
       - dpkg-buildpackage -b -uc
       - cd ..
       - cp  -vt /packages/$(basename $DRONE_REPO) *.udeb *.deb *.changes 2>/dev/null || true
-  test:
-    image: pardus/pardus-test
-    volumes:
-      - /tmp/packages:/packages
-    commands:
-      - apt-get update
-      - apt-get purge live-config-backend
-      - apt-get install /packages/$(basename $DRONE_REPO)/*.deb
   deploy:
     image: pardus/pardus-test
     volumes:
