@@ -1,3 +1,9 @@
+live-config (5.20160608pardus3) pardus; urgency=medium
+
+  * Modify 1170-xfce4-panel for Pardus live purposes
+
+ -- Yunusemre Şentürk <yunusemre.senturk@pardus.org.tr>  Mon, 12 Dec 2016 08:57:35 +0300
+
 live-config (5.20160608pardus2) pardus; urgency=medium
 
   * Remove test section from .drone.yml file
