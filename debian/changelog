@@ -1,3 +1,18 @@
+live-config (5.20170112) unstable; urgency=medium
+
+  * Team upload.
+  * Don't force the vboxvideo Xorg driver when virtualbox-guest-x11 is
+    installed. It's harmful when we use the kernel driver. Closes: #831384
+    Thanks to intrigeri and Rohan Garg.
+  * Use dbus-run-session instead of dbus-launch to run gsettings. Thanks
+    to Simon McVittie for the report. Closes: #836102 
+  * Support xorg-driver=noproprietary to not override Xorg's auto-detection
+    of the driver (live-config does that by default for cards supported by the
+    fglrx/nvidia drivers if they are installed). Thanks to Wolfgang Scheicher
+    for the initial patch. Closes: #808732
+
+ -- Raphaël Hertzog <hertzog@debian.org>  Thu, 12 Jan 2017 18:11:22 +0100
+
 live-config (5.20160608pardus3) pardus; urgency=medium
 
   * Modify 1170-xfce4-panel for Pardus live purposes
