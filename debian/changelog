@@ -1,3 +1,9 @@
+live-config (5.20170112pardus1) pardus; urgency=medium
+
+  * Make pardus changes.
+
+ -- Yunusemre Şentürk <yunusemre.senturk@pardus.org.tr>  Tue, 28 Mar 2017 13:45:15 +0300
+
 live-config (5.20170112) unstable; urgency=medium
 
   * Team upload.
